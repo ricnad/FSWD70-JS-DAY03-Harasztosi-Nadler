@@ -21,6 +21,11 @@
 			font-weight: bold;
 			color: #222;
 		}
+
+		hr {
+			display: block;
+			
+		}
 		
 	</style>
 
@@ -78,7 +83,38 @@
 		}
 
 
+		// intermediate 01
+		var points = [76, 85, 65, 93, 81], graduates = [60, 70, 80, 90, 100], average01 = 1,
+		sum = 0;
+
+		for (var i = 0; i < points.length; i++) {
+			sum += points[i];
+		}
+
+		//console.log(sum);
+		var avgOfClass = sum / points.length;
+
+		console.log('average of class: ' + avgOfClass);
+
+		if (avgOfClass <= 100 && avgOfClass > 90) {
+			console.log('class reached \"catagory A\"');
+
+		} else if (avgOfClass <= 90 && avgOfClass > 80) {
+			console.log('class reached \"catagory B\"');
+
+		} else if (avgOfClass <= 80 && avgOfClass > 70) {
+			console.log('class reached \"catagory C\"');
+
+		} else if (avgOfClass <= 70 && avgOfClass > 60) {
+			console.log('class reached \"catagory D\"');
+
+		} else {
+			console.log('THE WHOLE CLASS FAILED!!!');
+
+		}
+
 	</script>
+	<hr>
 
 </body>
 </html>
